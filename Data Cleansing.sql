@@ -39,3 +39,4 @@ update apprenticeships set expected_duration='12 Months' where expected_duration
 update apprenticeships set expected_duration='39 Months' where expected_duration ilike '39 Years';
 update apprenticeships set expected_duration='36 Months' where expected_duration ilike '36 Years';
 update apprenticeships set expected_duration='33 Months' where expected_duration ilike '33 Years';
+
