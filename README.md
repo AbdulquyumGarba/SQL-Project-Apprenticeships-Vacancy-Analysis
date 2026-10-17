@@ -9,6 +9,11 @@ Explore the Apprenticeships Job Market, exploring all sectors of Apprenticeships
 # Background
 I am in my final year of College, where I currently study Data Analytics(T level) and I wanted to apply for apprenticeships, so I thought it could be useful  to use data to make informed decisions on how to embark on applying for one, and also help my peers by providing them with insights from my analysis which might help them choose whether going to university or getting an apprenticeship is better, and specifically for my classmates, I would be carving out the Digital Industry from the whole data in order to focus specifically on data Roles Like Data Engineer, Data Scientist and Data Analyst, check that out here on another project “Provide a Link”
 
+## Data Sources & Licensing
++ Source: UK Government Public Archives via [GOV.UK](https://www.google.com/url?sa=i&source=web&rct=j&url=https://www.gov.uk&opi=89978449&psig=AOvVaw0SorTJJhsTWUMpiUZNdzGN&ust=1792329525733000).
++ Licence: Contains public sector information licensed under the Open Government Licence v3.0.
++ Modifications: The raw data was filtered, cleaned, and aggregated.
+
 ## Tools Used
 + **SQL:** My analysis was made using the SQL Language,
 +	**PostgreSQL:** The DBMS I use for most of analysis as it is capable of handling huge amounts of Data, and it also lends itself well as it has functions 
