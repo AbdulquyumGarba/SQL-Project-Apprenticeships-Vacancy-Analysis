@@ -43,5 +43,5 @@ order by 2 desc;
 -[x] Apprenticeship Vacancy by UK_Region
 
 _<sub> One of teh complex chart i had to come up with, I enriched my data with [Doogal postcodes]()
-
-<img width="1277" height="548" alt="image" src="https://github.com/user-attachments/assets/6dbf3c84-8ffe-4688-8240-820be2ff2a8c" />
+![<img width="1277" height="548" alt="Apprenticeship_Vacancy_by_UK_Region" src="https://github.com/user-attachments/assets/da8d1885-9c7d-4785-8ed9-2be0ac9550e4" />
+](https://public.tableau.com/shared/PJF3SKC33?:display_count=n&:origin=viz_share_link)
