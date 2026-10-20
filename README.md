@@ -40,8 +40,45 @@ order by 2 desc;
 ```
 <img width="1187" height="505" alt="Average_Wage_by_Apprenticeship_type_and_Education_level" src="https://github.com/user-attachments/assets/9b839a41-e767-4687-bf00-2bd854942259" />
 
--[x] Apprenticeship Vacancy by UK_Region
+- [x] Apprenticeship Vacancy by UK Region
 
-_<sub> One of teh complex chart i had to come up with, I enriched my data with [Doogal postcodes]()
-![<img width="1277" height="548" alt="Apprenticeship_Vacancy_by_UK_Region" src="https://github.com/user-attachments/assets/da8d1885-9c7d-4785-8ed9-2be0ac9550e4" />
-](https://public.tableau.com/shared/PJF3SKC33?:display_count=n&:origin=viz_share_link)
+_<sub> One of the most time-consuming and complex chart i had to come up with, I enriched my data with [Doogal Postcodes](https://github.com/AbdulquyumGarba/SQL-Project-Apprenticeships-Vacancy-Analysis/blob/main/Postcode%20districts.csv) so i would be able to link the postcode on the vacancy post to its region,click on the image to Interact with the [Chart](https://public.tableau.com/shared/PJF3SKC33?:display_count=n&:origin=viz_share_link) on my Tableau page_</sub>
+
+```sql
+Select
+	Vacancy_Reference_Number /*Primary Key*/
+	Vacancy_Postcode
+from apprenticeships;
+```
+[<img width="1277" height="548" alt="Apprenticeship_Vacancy_by_UK_Region" src="https://github.com/user-attachments/assets/da8d1885-9c7d-4785-8ed9-2be0ac9550e4" />](https://public.tableau.com/shared/PJF3SKC33?:display_count=n&:origin=viz_share_link)
+
+- [x] Apprenticeship Vacancy Trend by
+
+_<sub></sub>_	  
+
+```sql
+select 
+	TO_CHAR( date_posted,'YYYY') "Year",
+	COUNT(Vacancy_reference_number) Amount_Of_Apprenticeships
+from Apprenticeships
+group by 1
+order by 2 desc;
+```
+
+[<img width="776" height="574" alt="Apprenticeship_Vacancy_Trend" src="https://github.com/user-attachments/assets/a0ae4f3c-8e1e-4434-bf84-e7fa864ef7bb" />](https://public.tableau.com/views/ApprenticeshipTrendin4years/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+- [x] Average Hours per week by Apprenticeship type
+
+_<sub></sub>_	 
+
+```sql
+select 
+	apprenticeship_type,
+	ROUND(AVG(hours_per_week )) Average_weekly_hours
+from apprenticeships
+group by 1
+order by 2 desc;
+```
+[<img width="1277" height="523" alt="Sheet 1" src="https://github.com/user-attachments/assets/d62e9813-4107-44eb-a9b6-1628993540fa" />](https://public.tableau.com/views/AveragePeriodofTimeBetweenDatePostedandExpectedStartDatebySector/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+- [x] 
