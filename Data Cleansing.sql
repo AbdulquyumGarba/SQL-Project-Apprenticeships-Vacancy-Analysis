@@ -2,6 +2,10 @@ update apprenticeships
 set wage_type='National minimum wage for apprentices'
 where wage_type ='National Minimum Wage Salary';
 
+update apprenticeships 
+set apprenticeship_type ='Intermediate Level Apprenticeship'
+where apprenticeship_type ='Level Apprenticeship';
+
 -- Looking for an average annual wag to replace the range in the wage column
 select distinct wage_type,wage,hours_per_week ,apprenticeship_type,education_level  from apprenticeships where 
 wage ilike '%-%'
