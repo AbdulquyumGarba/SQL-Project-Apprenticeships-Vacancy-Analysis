@@ -67,7 +67,9 @@ order by 2 desc;
 
 [<img width="776" height="574" alt="Apprenticeship_Vacancy_Trend" src="https://github.com/user-attachments/assets/a0ae4f3c-8e1e-4434-bf84-e7fa864ef7bb" />](https://public.tableau.com/views/ApprenticeshipTrendin4years/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-- [x] Average Hours per week by Apprenticeship type
+- [x] Average Weekly Hours by Apprenticeship type
+
+<img width="549" height="264" alt="Average_Weekly_Hours_by_Apprenticeship_type" src="https://github.com/user-attachments/assets/688de5ad-b9b5-4e95-9d2c-f6a9b62e1157" />
 
 _<sub></sub>_	 
 
