@@ -52,7 +52,7 @@ from apprenticeships;
 ```
 [<img width="1277" height="548" alt="Apprenticeship_Vacancy_by_UK_Region" src="https://github.com/user-attachments/assets/da8d1885-9c7d-4785-8ed9-2be0ac9550e4" />](https://public.tableau.com/shared/PJF3SKC33?:display_count=n&:origin=viz_share_link)
 
-- [x] Apprenticeship Vacancy Trend by
+- [x] Apprenticeship Vacancy Trend from 2022-2026
 
 _<sub></sub>_	  
 
@@ -78,6 +78,18 @@ select
 from apprenticeships
 group by 1
 order by 2 desc;
+```
+
+| Apprenticeship_type   | Demand Count |
+|-----------------------|--------------|
+| SQL      | 7291         |
+| Excel    | 4611         |
+| Python   | 4330         |
+| Tableau  | 3745         |
+| Power BI | 2609         |
+
+
+
 ```
 [<img width="1277" height="523" alt="Sheet 1" src="https://github.com/user-attachments/assets/d62e9813-4107-44eb-a9b6-1628993540fa" />](https://public.tableau.com/views/AveragePeriodofTimeBetweenDatePostedandExpectedStartDatebySector/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
