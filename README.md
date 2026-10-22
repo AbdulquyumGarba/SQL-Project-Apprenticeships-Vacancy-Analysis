@@ -54,6 +54,26 @@ from apprenticeships;
 
 - [x] Apprenticeship Vacancy Trend from 2022-2026
 
+_<sub></sub>_
+
+```sql
+SELECT
+    education_level,
+    COUNT(*) AS number_of_apprenticeships,
+    ROUND(
+        COUNT(*) * 100.0 / SUM(COUNT(*)) OVER (),
+        2
+    ) AS percentage
+FROM apprenticeships
+WHERE education_level IS NOT NULL
+GROUP BY education_level
+ORDER BY education_level;
+```
+[<img width="1291" height="297" alt="Percentage_of_Apprenticeship_by_education_level" src="https://github.com/user-attachments/assets/6dc89d0a-b194-4eb5-9c3a-b37e6edb8ae4" />
+](https://public.tableau.com/views/PercentagesofApprenticeshipsVacancybyEducationLevel/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+
+- [x] Apprenticeship Vacancy Trend from 2022-2026
+
 _<sub></sub>_	  
 
 ```sql
@@ -69,9 +89,7 @@ order by 2 desc;
 
 - [x] Average Weekly Hours by Apprenticeship type
 
-<img width="549" height="264" alt="Average_Weekly_Hours_by_Apprenticeship_type" src="https://github.com/user-attachments/assets/688de5ad-b9b5-4e95-9d2c-f6a9b62e1157" />
-
-_<sub></sub>_	 
+_<sub></sub>_	
 
 ```sql
 select 
@@ -82,17 +100,20 @@ group by 1
 order by 2 desc;
 ```
 
-| Apprenticeship_type   | Demand Count |
-|-----------------------|--------------|
-| SQL      | 7291         |
-| Excel    | 4611         |
-| Python   | 4330         |
-| Tableau  | 3745         |
-| Power BI | 2609         |
+[<img width="549" height="264" alt="Average_Weekly_Hours_by_Apprenticeship_type" src="https://github.com/user-attachments/assets/688de5ad-b9b5-4e95-9d2c-f6a9b62e1157" />](https://public.tableau.com/views/Average_Weekly_Hours_by_Apprenticeship_type/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+- [x] Average **Post to start** date
 
+_<sub></sub>_	
 
+```sql
+select 
+	sector_name, 
+	ROUND(AVG(expected_start_date-date_posted)) "Average_Period"
+from apprenticeships
+group by 1
+order by 2 desc;
 ```
 [<img width="1277" height="523" alt="Sheet 1" src="https://github.com/user-attachments/assets/d62e9813-4107-44eb-a9b6-1628993540fa" />](https://public.tableau.com/views/AveragePeriodofTimeBetweenDatePostedandExpectedStartDatebySector/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-- [x] 
+
