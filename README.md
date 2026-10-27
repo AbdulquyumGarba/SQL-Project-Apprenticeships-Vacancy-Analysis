@@ -54,7 +54,7 @@ from apprenticeships;
 
 - [x] Percentage of Apprenticeship Vacancy by **Education Level**
 
-_<sub></sub>_
+_<sub>This in conjunction with the other queries such as the [Apprenticeship Vacancy Trend from 2022-2026](#my-custom-anchor-point)</sub>_
 
 ```sql
 SELECT
@@ -71,6 +71,7 @@ ORDER BY education_level;
 ```
 [<img width="1291" height="297" alt="Percentage_Of_apprenticeship_vacancy_by_education_level" src="https://github.com/user-attachments/assets/623e9e3a-61c6-444e-8af8-eb9dfe018989" />](https://public.tableau.com/views/PercentagesofApprenticeshipsVacancybyEducationLevel/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+<a name="my-custom-anchor-point"></a>
 - [x] Apprenticeship Vacancy Trend from 2022-2026
 
 _<sub> To gain an insight into the amount of apprenticeships vacancy post **Covid** till now, I extracted the years from the **post date** of the vacancy and aggregated the **vacancy_reference_number** and group by each year to get a visual overview of trend across the **4 year Period**.</sub>_	  
