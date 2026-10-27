@@ -26,6 +26,8 @@ I am in my final year of College, where I currently study Data Analytics(T level
 _<sub>This is non-exhaustive list, i made more explorations on the datset</sub>_
 
 ### Data Visualization
+
+<a name="my-custom-anchor-point"></a>
 - [x] Average Wage by Apprenticeship_Type and Education_Level
     
 _<sub>Curious to find out how much an apprentice is likely to receive annually, I calculated the average wages by apprenticeship_type and education level, although the query doesnt show education_level, i had to create an hierachy in **Tableau** that groups each education_level to it's apprenticehip type.</sub>_
@@ -54,7 +56,7 @@ from apprenticeships;
 
 - [x] Percentage of Apprenticeship Vacancy by **Education Level**
 
-_<sub>This in conjunction with the other queries such as the [Apprenticeship Vacancy Trend from 2022-2026](#my-custom-anchor-point)</sub>_
+_<sub>This in conjunction with the other queries such as the [Average Wage by Apprenticeship_Type and Education_Level](#my-custom-anchor-point) and [Average Weekly Hours by Apprenticeship type]<a name="my-custom-anchor-point2"></a>, would assist the prospective applicant to make an informed decison on which **Level** to aim for with regards to percentage of vacancy</sub>_
 
 ```sql
 SELECT
@@ -71,7 +73,6 @@ ORDER BY education_level;
 ```
 [<img width="1291" height="297" alt="Percentage_Of_apprenticeship_vacancy_by_education_level" src="https://github.com/user-attachments/assets/623e9e3a-61c6-444e-8af8-eb9dfe018989" />](https://public.tableau.com/views/PercentagesofApprenticeshipsVacancybyEducationLevel/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-<a name="my-custom-anchor-point"></a>
 - [x] Apprenticeship Vacancy Trend from 2022-2026
 
 _<sub> To gain an insight into the amount of apprenticeships vacancy post **Covid** till now, I extracted the years from the **post date** of the vacancy and aggregated the **vacancy_reference_number** and group by each year to get a visual overview of trend across the **4 year Period**.</sub>_	  
@@ -87,6 +88,7 @@ order by 2 desc;
 
 [<img width="776" height="574" alt="Apprenticeship_Vacancy_Trend" src="https://github.com/user-attachments/assets/a0ae4f3c-8e1e-4434-bf84-e7fa864ef7bb" />](https://public.tableau.com/views/ApprenticeshipTrendin4years/Sheet1?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
+<a name="my-custom-anchor-point2"></a>
 - [x] Average Weekly Hours by Apprenticeship type
 
 _<sub> This query gives an insight into the average weekly hours for each apprenticeship type, therefore allowing prospective applicants to take into consideration the weekly hours for each apprenticeship type they might be planning to apply to as this might be an influencing factor.</sub>_	
