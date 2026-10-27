@@ -56,7 +56,7 @@ from apprenticeships;
 
 - [x] Percentage of Apprenticeship Vacancy by **Education Level**
 
-_<sub>This in conjunction with the other queries such as the [Average Wage by Apprenticeship_Type and Education_Level](#my-custom-anchor-point) and [Average Weekly Hours by Apprenticeship type]<a name="my-custom-anchor-point2"></a>, would assist the prospective applicant to make an informed decison on which **Level** to aim for with regards to percentage of vacancy</sub>_
+_<sub>This in conjunction with the other queries such as the [Average Wage by Apprenticeship_Type and Education_Level](#my-custom-anchor-point) and [Average Weekly Hours by Apprenticeship type](#my-custom-anchor-point2)</a>, would assist the prospective applicant to make an informed decison on which **Level** to aim for with regards to percentage of vacancy</sub>_
 
 ```sql
 SELECT
