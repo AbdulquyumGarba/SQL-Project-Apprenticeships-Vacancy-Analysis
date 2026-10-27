@@ -52,7 +52,7 @@ from apprenticeships;
 ```
 [<img width="1277" height="548" alt="Apprenticeship_Vacancy_by_UK_Region" src="https://github.com/user-attachments/assets/da8d1885-9c7d-4785-8ed9-2be0ac9550e4" />](https://public.tableau.com/shared/PJF3SKC33?:display_count=n&:origin=viz_share_link)
 
-- [x] Apprenticeship Vacancy Trend from 2022-2026
+- [x] Percentage of Apprenticeship Vacancy by **Education Level**
 
 _<sub></sub>_
 
@@ -69,12 +69,11 @@ WHERE education_level IS NOT NULL
 GROUP BY education_level
 ORDER BY education_level;
 ```
-[<img width="1291" height="297" alt="Percentage_of_Apprenticeship_by_education_level" src="https://github.com/user-attachments/assets/6dc89d0a-b194-4eb5-9c3a-b37e6edb8ae4" />
-](https://public.tableau.com/views/PercentagesofApprenticeshipsVacancybyEducationLevel/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[<img width="1291" height="297" alt="Percentage_Of_apprenticeship_vacancy_by_education_level" src="https://github.com/user-attachments/assets/623e9e3a-61c6-444e-8af8-eb9dfe018989" />](https://public.tableau.com/views/PercentagesofApprenticeshipsVacancybyEducationLevel/Sheet1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 - [x] Apprenticeship Vacancy Trend from 2022-2026
 
-_<sub></sub>_	  
+_<sub> To gain an insight into the amount of apprenticeships vacancy post **Covid** till now, I extracted the years from the **post date** of the vacancy and aggregated the **vacancy_reference_number** and group by each year to get a visual overview of trend across the **4 year Period**.</sub>_	  
 
 ```sql
 select 
@@ -89,7 +88,7 @@ order by 2 desc;
 
 - [x] Average Weekly Hours by Apprenticeship type
 
-_<sub></sub>_	
+_<sub> This query gives an insight into the average weekly hours for each apprenticeship type, therefore allowing prospective applicants to take into consideration the weekly hours for each apprenticeship type they might be planning to apply to as this might be an influencing factor.</sub>_	
 
 ```sql
 select 
@@ -104,7 +103,7 @@ order by 2 desc;
 
 - [x] Average **Post to start** date
 
-_<sub></sub>_	
+_<sub> This query would help the prospective apprenticeship applicants to get an estimated <ins>**average time**</ins> of how long the application process is for each sector starting the **date posted** to the **job start date**, which would give the applicant an insight into how to plan, schedule and prepare themselves for the **application process**</sub>_	
 
 ```sql
 select 
